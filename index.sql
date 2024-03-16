@@ -1,3 +1,7 @@
-select 'list' as component, 'popular websites' as title;
+SELECT 'form' AS component, 'Add a user' AS title;
 
-select 'hello' as title, 'world' as description, 'https://wikipedia.org' as link;
+SELECT 'Username' as name, TRUE as required;
+
+INSERT INTO users (name)
+SELECT :Username
+WHERE :Username IS NOT NULL;
