@@ -16,6 +16,6 @@ SELECT 'list' AS component,
 SELECT username AS title,
     username || ' is a user on this website.' as description,
     'user' as icon,
-    'user.sql?id=' || id as link,
+    'user.sql?id=' || id as edit_link,
     'delete.sql?id=' || id as delete_link
 FROM users;
